@@ -58,7 +58,7 @@
                         @endforeach
                     </td>
                     <td class="domain{{ strlen($route->domain()) == 0 ? ' domain-empty' : '' }}">{{ $route->domain() }}</td>
-                    <td>{!! preg_replace('#({[^}]+})#', '<span class="text-warning">$1</span>', $route->uri()) !!}</td>
+                    <td>@if ($route->getActionName() === 'GET') <a href="{{ route($route->getName()) }}"> @endif {!! preg_replace('#({[^}]+})#', '<span class="text-warning">$1</span>', $route->uri()) !!} @if ($route->getActionName() === 'GET') </a> @endif </td>
                     <td>{{ $route->getName() }}</td>
                     <td>{!! preg_replace('#(@.*)$#', '<span class="text-warning">$1</span>', $route->getActionName()) !!}</td>
                     <td>
