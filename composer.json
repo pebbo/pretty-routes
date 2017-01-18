@@ -1,5 +1,5 @@
 {
-    "name": "garygreen/pretty-routes",
+    "name": "pebbo/pretty-routes",
     "description": "Pretty routes for Laravel 5.",
     "require": {
         "laravel/framework": "5.1.*|5.2.*|5.3.*"
@@ -7,8 +7,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Gary Green",
-            "email": "holegary@gmail.com"
+            "name": "Patrick Pecher",
+            "email": "pebbo@gmx.de"
         }
     ],
     "autoload": {
